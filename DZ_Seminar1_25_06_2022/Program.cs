@@ -47,3 +47,22 @@ else
 {
     Console.WriteLine("БОльшая цифра из трех: " + secondMax);
 } */
+
+////////////////////////////
+///////ЗАДАЧА №3////////////
+////////////////////////////
+
+/* Console.Write("Веддите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+int result = (number % 2);
+
+if (result == 0)
+    {
+      Console.WriteLine("Да, число кратно двум");  
+    }
+else 
+    {
+        Console.WriteLine("Нет, число не кратно двум");  
+    } 
+*/
