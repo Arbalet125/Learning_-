@@ -50,3 +50,27 @@ else
         Console.WriteLine($"Вторая (с начала) цифра числа {originalNumber}: " + number);    
     }
  */
+
+ ////////////////////////////
+///////ЗАДАЧА №3////////////
+////////////////////////////
+
+/* 
+Console.Write("Веддите день недели: ");
+int dayNumber = Convert.ToInt32(Console.ReadLine());
+if (dayNumber >= 1 && dayNumber <= 8) //&& - and - обязательно выполняющееся условие
+    {
+        if (dayNumber == 6 || dayNumber == 7)
+        {
+            Console.WriteLine($"{dayNumber}-й день недели является выходным");
+        }
+        else
+        {
+            Console.WriteLine($"{dayNumber}-й день недели не является выходным");
+        }
+    }
+else
+    {
+        Console.WriteLine("Неправильно задан день недели");
+    } 
+*/
