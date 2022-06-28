@@ -66,3 +66,23 @@ else
         Console.WriteLine("Нет, число не кратно двум");  
     } 
 */
+
+////////////////////////////
+///////ЗАДАЧА №4////////////
+////////////////////////////
+
+/* Console.Write("Веддите число N: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int count = 1;
+int listCount = 1;
+while (count <= number)
+{
+    int result = (count % 2);
+    if (result == 0)
+        {
+            Console.WriteLine($"{listCount}-e число кратное двум в промежутке от 1 до {number}: " + count);  
+            listCount ++;
+        }
+    count++;
+} 
+*/
