@@ -1,0 +1,15 @@
+C:\Users\mamet\Documents\Учеба\С#_education\Seminar2_26_06_2022\bin\Debug\net6.0\Seminar2_26_06_2022.exe
+C:\Users\mamet\Documents\Учеба\С#_education\Seminar2_26_06_2022\bin\Debug\net6.0\Seminar2_26_06_2022.deps.json
+C:\Users\mamet\Documents\Учеба\С#_education\Seminar2_26_06_2022\bin\Debug\net6.0\Seminar2_26_06_2022.runtimeconfig.json
+C:\Users\mamet\Documents\Учеба\С#_education\Seminar2_26_06_2022\bin\Debug\net6.0\Seminar2_26_06_2022.dll
+C:\Users\mamet\Documents\Учеба\С#_education\Seminar2_26_06_2022\bin\Debug\net6.0\Seminar2_26_06_2022.pdb
+C:\Users\mamet\Documents\Учеба\С#_education\Seminar2_26_06_2022\obj\Debug\net6.0\Seminar2_26_06_2022.csproj.AssemblyReference.cache
+C:\Users\mamet\Documents\Учеба\С#_education\Seminar2_26_06_2022\obj\Debug\net6.0\Seminar2_26_06_2022.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mamet\Documents\Учеба\С#_education\Seminar2_26_06_2022\obj\Debug\net6.0\Seminar2_26_06_2022.AssemblyInfoInputs.cache
+C:\Users\mamet\Documents\Учеба\С#_education\Seminar2_26_06_2022\obj\Debug\net6.0\Seminar2_26_06_2022.AssemblyInfo.cs
+C:\Users\mamet\Documents\Учеба\С#_education\Seminar2_26_06_2022\obj\Debug\net6.0\Seminar2_26_06_2022.csproj.CoreCompileInputs.cache
+C:\Users\mamet\Documents\Учеба\С#_education\Seminar2_26_06_2022\obj\Debug\net6.0\Seminar2_26_06_2022.dll
+C:\Users\mamet\Documents\Учеба\С#_education\Seminar2_26_06_2022\obj\Debug\net6.0\refint\Seminar2_26_06_2022.dll
+C:\Users\mamet\Documents\Учеба\С#_education\Seminar2_26_06_2022\obj\Debug\net6.0\Seminar2_26_06_2022.pdb
+C:\Users\mamet\Documents\Учеба\С#_education\Seminar2_26_06_2022\obj\Debug\net6.0\Seminar2_26_06_2022.genruntimeconfig.cache
+C:\Users\mamet\Documents\Учеба\С#_education\Seminar2_26_06_2022\obj\Debug\net6.0\ref\Seminar2_26_06_2022.dll
