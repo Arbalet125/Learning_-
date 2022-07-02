@@ -23,8 +23,6 @@ while(number >= 1)
     reverseNumber = reverseNumber * 10 + digit;
     number = number / 10;
 }
-Console.WriteLine(temp);
-Console.WriteLine(reverseNumber);
 
 if (temp == reverseNumber)
 {
