@@ -4,61 +4,56 @@
 // ///////////////////////////////////////12821 -> да//////////////////////////////////////////////////////////
 // ///////////////////////////////////////23432 -> да//////////////////////////////////////////////////////////
 
-/* void FillArray(int [] collection)
+//Решение без индексов и массивов:
+
+/* Console.Write("Введите число: "); 
+int number = Convert.ToInt32(Console.ReadLine());
+if(number > 100000 || number < 9999)
 {
-    int length = collection.Length;
-    int index = 0;
-    while(index < length)
-    {
-        Console.Write($"Введите {index}-ю цифру пятизначного нам числа: ");
-        collection[index] = Convert.ToInt32(Console.ReadLine());
-        index++;
-    }
+    Console.Write($"Число {number} не является пятизначным");
+    return;
 }
 
-void PrintArray(int[] col)
+int temp = number;
+int reverseNumber = 0;
+int digit = 0;
+while(number >= 1)
 {
-    int count = col.Length;
-    int position = 0;
-    Console.WriteLine("Введенное вами число:");
-    while(position < count)
-    {
-        Console.Write(col[position]);
-        position ++;
-    }
+    digit = number % 10;
+    reverseNumber = reverseNumber * 10 + digit;
+    number = number / 10;
 }
+Console.WriteLine(temp);
+Console.WriteLine(reverseNumber);
 
-void Palindrom(int[] pal)
+if (temp == reverseNumber)
 {
-    int temp = 0;
-    int palLength = pal.Length;
-    int palIndex = 0;
-    int tempIndex = palLength - (palIndex + 1);
-    while(palIndex < palLength)
-    {
-        if (pal[palIndex] == pal[tempIndex])
-        {
-            temp++;
-        }
-        palIndex++;
-        tempIndex++;
-    }
-    if (temp == palLength)
-    {
-       Console.WriteLine(", и оно является палиндромом");
-    }
-    else
-    {
-        Console.WriteLine(", и оно не является палиндромом");
-    }
+    Console.WriteLine("число является палиндромом");
 }
+else
+{
+    Console.WriteLine("число не является палиндромом");
+}
+ */
 
-int[] array = new int[5];
+//Решение с индексами:
 
-FillArray(array);
-PrintArray(array);
-Palindrom(array); */
-
+/* Console.Write("Введите число: ");
+string number = Console.ReadLine();
+int length = number.Length;
+if (length != 5)
+{
+    Console.Write($"Число {number} не является пятизначным");
+    return;
+}
+if (number[0] == number[4] && number[1] == number[3])
+{
+    Console.WriteLine("число является палиндромом");
+}
+else
+{
+    Console.WriteLine("число не является палиндромом");
+} */
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
