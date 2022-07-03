@@ -41,8 +41,8 @@ int digit = 0;
 while(number > 0)
 {
     digit = number % 10;
-    result = result + digit;
-    number = number / 10;
+    result += digit;
+    number /= 10;
 }
 Console.WriteLine($"Сумма цифр числа {tempNumber}, будет составлять: {result}"); */
 
