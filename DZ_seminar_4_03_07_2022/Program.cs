@@ -55,7 +55,7 @@ Console.WriteLine($"Сумма цифр числа {tempNumber}, будет со
 //Через методы из лекции:
 
 
-Console.Write("Введите размер массива: ");
+/* Console.Write("Введите размер массива: ");
 int arrayLength = Convert.ToInt32(Console.ReadLine());
 
 void FillArray(int [] collection)
@@ -81,12 +81,12 @@ void PrintArray(int[] col)
         Console.Write($"{col[position]} ");
         position ++;
     }
-Console.Write("]");
+    Console.Write("]");
 }   
 int[] array = new int[arrayLength];
 
 FillArray(array);
-PrintArray(array);
+PrintArray(array); */
 
 ///////// Через методы с семинара:
 
