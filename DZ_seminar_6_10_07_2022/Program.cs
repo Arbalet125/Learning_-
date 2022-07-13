@@ -28,16 +28,16 @@ Console.WriteLine($"Среди чисел [{String.Join("; ", array)}] вы вв
 // y = y = k1 * x + b1;
 
 /* Console.Write($"Введите точку пересечения первой прямой с осью Y: ");
-double firstLinePointCrossWithY = Convert.ToDouble(Console.ReadLine()); //b1
+double firstLinePointCrossWithY = Convert.ToDouble(Console.ReadLine()); 
 
 Console.Write($"Введите угловой коэффицент первой прямой: ");
-double firstLineAngularCoefficient = Convert.ToDouble(Console.ReadLine()); //k1
+double firstLineAngularCoefficient = Convert.ToDouble(Console.ReadLine()); 
 
 Console.Write($"Введите точку пересечения второй прямой с осью Y: ");
-double secondLinePointCrossWithY = Convert.ToDouble(Console.ReadLine()); //b2
+double secondLinePointCrossWithY = Convert.ToDouble(Console.ReadLine()); 
 
 Console.Write($"Введите угловой коэффицент второй прямой: ");
-double secondLineAngularCoefficient = Convert.ToDouble(Console.ReadLine()); //k2
+double secondLineAngularCoefficient = Convert.ToDouble(Console.ReadLine()); 
 
 double firstCrossCoordinate = (secondLinePointCrossWithY - firstLinePointCrossWithY) / (firstLineAngularCoefficient - secondLineAngularCoefficient);
 
