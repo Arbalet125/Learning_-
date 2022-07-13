@@ -34,8 +34,8 @@ for (int index = 0; index < array.Length; index++)
     array[index] = new Random().Next(0, 10);
     if (index % 2 != 0)    
     //if (index % 2 == 0) - если мы имеем ввиду, что "элементы на нечетных позициях", это array[0] + array [2] + array [4], и т.д., ибо визуально кажется что так будет правильно, 
-    //если взглянуть на результат. Если мы делаем программу не для программиста, а для обывателя, я бы оставил так. Но если следовать условию задачи, так как я его понял, 
-    //то незакомментированный вариант, конечно.
+    //если взглянуть на результат. Если мы делаем программу не для программиста, а для обывателя, я бы оставил так. Но если следовать условию задачи (так как я его понял), 
+    //то правилен незакомментированный вариант, конечно.
     {
         resultNumber += array[index];
     }
@@ -68,17 +68,16 @@ for (int i = 0; i < array.Length; i++)
     //Console.Write($"{maxNumber} ");
     //Console.WriteLine(string.Empty);
 }
-//Console.Write($"{maxNumber} ");
+//Console.Write($"Итого наибольшее число: {maxNumber} ");
 for (int i = 0; i < array.Length; i++)
 {
     if (array[i] < array[arrayLength - 1 - i]) minNumber = array[i];
     //Console.Write($"{minNumber} ");
     //Console.WriteLine(string.Empty);
 }
-//Console.Write($"{minNumber} ");
+//Console.Write($"Итого наименьшее число: {minNumber} ");
 
 Console.WriteLine($"Разница между максимальным и минимальным элементами массива [{String.Join("; ", array)}] равна: {maxNumber - minNumber}");
 
 // специально сделал все максимально подробно, чтобы можно было проверить результаты на каждом шаге, ибо, почему-то, именно с этой задачей у меня терминал выдавал наибольшее число ошибок(
      */
-     
