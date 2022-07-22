@@ -172,3 +172,52 @@ SearchResult(array);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+
+int[,] GetArray(int m, int n) // простой array 3x3, без ввода, потому что не хотел 100 раз расписывать одно и то же
+{
+    int[,] resultArray = new int[m, n];
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            resultArray[i, j] = new Random().Next(10);
+        }
+    }
+    return resultArray;
+}
+
+void PrintArray(int[,] inputArray)
+{
+    for (int i = 0; i < inputArray.GetLength(0); i++)
+    {
+        for (int j = 0; j < inputArray.GetLength(1); j++)
+        {
+            Console.Write(inputArray[i, j] + "\t");
+        }
+        Console.WriteLine();
+    }
+}
+
+void Average(int[,] newMatrix)
+{
+    double[] averages = new double[4];
+    for (int i = 0, k = 0; i < newMatrix.GetLength(0); i++)
+    {
+        double summa = 0;
+        for (int j = 0; j < newMatrix.GetLength(0); j++)
+            {
+                summa += newMatrix[j, i];
+            }
+        averages[k] = summa / 3;
+        Console.WriteLine($"Среднее аримфмитическое {i+1}го столбца : {Math.Round(averages[k], 2)}");
+        k++;
+    }
+       
+}
+
+
+int[,] array = GetArray(3, 3);
+
+PrintArray(array);
+Console.WriteLine();
+Average(array);
