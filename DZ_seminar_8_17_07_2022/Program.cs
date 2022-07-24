@@ -135,35 +135,50 @@ for (int i = 0; i < 4; i++)
 ////////////////////////////////////////////////////Заполните спирально массив 4 на 4.//////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-int rowsAndColumns = 4;
-int[,] matrix = new int[rowsAndColumns, rowsAndColumns];
+/* int rows = 4; //массив 4х4 так что не стал задавать его через ввод.
+int columns = 4;
 
-int number = 0;
+int[,] matrix = new int[rows, columns];
 
-for (int i = 0; i < rowsAndColumns / 2; i++)
+int number = 1; //число, которое мы будем увеличивать, пока будем двигаться по спирали.
+
+//shift; // переменная для "сдвига" курсора во "внутреннюю часть" двухмерного масива
+for (int shift = 0; shift < rows-2; shift++)
 {
-    for (int j = i; j < rowsAndColumns - i; j++)
+    for (int i = shift; i < matrix.GetLength(0) - shift; i++)
     {
-        matrix[i, j] = number++;
-        Console.Write(matrix[i, j]+ "\t");
+        matrix[shift, i] = number;
+        number++;
     }
-    Console.WriteLine("");
-    for (int k = i; k < rowsAndColumns - i; k++)
+
+    for (int j = shift; j < matrix.GetLength(0) - shift; j++)
     {
-        matrix[k, rowsAndColumns - 1 - i] = number++;
-        Console.Write(matrix[k, rowsAndColumns - 1 - i]+ "\t");
+        matrix[j, columns - 1 - shift] = number;
+        number++;
     }
-    Console.WriteLine("");
-    for (int j = rowsAndColumns - i - 2; j >= i; j--)
+
+    for (int i = columns - 2 - shift; i > shift; i--) // >0, а не >=0, чтобы не переписывать последнюю цифру строки
     {
-        matrix[rowsAndColumns - 1 - i, j] = number++;
-        Console.Write(matrix[rowsAndColumns - 1 - i, j]+ "\t");
+        matrix[rows - 1 - shift, i] = number;
+        number++;
     }
-    Console.WriteLine("");
-    for (int k = rowsAndColumns - 2 - i; k > i; k--)
+
+    for (int j = rows - 1 - shift; j > shift; j--) // то же самое
     {
-        matrix[k, i] = number++;
-        Console.Write(matrix[k, i]+ "\t");
+        matrix[j, shift] = number;
+        number++;
     }
-    Console.WriteLine("");
 }
+void PrintArray(int[,] inputArray)
+{
+    for (int i = 0; i < inputArray.GetLength(0); i++)
+    {
+        for (int j = 0; j < inputArray.GetLength(0); j++)
+        {
+            Console.Write(inputArray[i, j] + "\t");
+        }
+        Console.WriteLine();
+    }
+}
+
+PrintArray(matrix); */
