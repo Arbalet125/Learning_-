@@ -2,7 +2,7 @@
 ////////////Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.//////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-Console.Write("Введите число M: ");
+/* Console.Write("Введите число M: ");
 int M = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Введите число N: ");
@@ -11,9 +11,26 @@ int N = Convert.ToInt32(Console.ReadLine());
 int SumNumbers(int start, int end)
 // M - start, end - N
 {
-    // Базовый случай
+    
     if (start == end) return end;
-    // Рекурсивный случай
     return (start + SumNumbers(start + 1, end));
 }
 Console.WriteLine(SumNumbers(M, N));
+ */
+
+///////////////////////////////////////////////////////////////////Задача 68.//////////////////////////////////////////////////////////////
+///////////////Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.///////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* Console.Write("Введите число M: ");
+int M = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите число N: ");
+int N = Convert.ToInt32(Console.ReadLine());
+
+int AkkermanFunction(int N, int M)
+{
+    if (N == 0) return M + 1;
+    return AkkermanFunction(N - 1, AkkermanFunction(N, M - 1));
+}
+Console.WriteLine(AkkermanFunction(N, M)); */
