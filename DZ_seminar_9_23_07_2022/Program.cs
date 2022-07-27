@@ -1,2 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿//////////////////////////////////////////////////////////////////Задача 66.////////////////////////////////////////////////////////////////////////
+////////////Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.//////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Console.Write("Введите число M: ");
+int M = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите число N: ");
+int N = Convert.ToInt32(Console.ReadLine());
+
+int SumNumbers(int start, int end)
+// M - start, end - N
+{
+    // Базовый случай
+    if (start == end) return end;
+    // Рекурсивный случай
+    return (start + SumNumbers(start + 1, end));
+}
+Console.WriteLine(SumNumbers(M, N));
